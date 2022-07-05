@@ -1,0 +1,139 @@
+.nav_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    /* background-color: black; */
+    /* opacity: 0.7; */
+}
+/* .nav_logo{
+    border: 2px solid white;
+    background-color: red;
+} */
+.nav_logo > img{
+    height: 50px;
+    margin-left: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+.nav_logo > img:hover{
+    box-shadow: 0px 0px 50px 11px rgb(170, 75, 0, 0.5);
+}
+.nav_right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+}
+.nav_ul{
+    display: flex;
+    gap: 3rem;
+    /* margin-right: 4rem; */
+}
+.nav_ul > a{
+    text-decoration: none;
+    color: brown;
+}
+.nav_li{
+    list-style: none;
+    /* color: black; */
+    font-weight: 600;
+    padding: 9px;
+}
+.nav_ul >a :hover{
+    text-decoration: underline;
+    font-weight: 900;
+    transform: scale(1.2);
+    border-radius: 12px;
+    box-shadow: 0px 0px 25px 0px rgb(170, 75, 0, 0.5);
+}
+
+.nav_mode{
+    /* display: none; */
+    visibility: hidden;
+    margin-left: 3rem;
+}
+@media screen and (max-width: 580px) {
+    .nav{
+        width: 100vw;
+        border-bottom: 2px solid blue;
+        padding-bottom: 6px;
+    }
+    .nav_header{
+        width: 100vw;
+        height: 16vh;
+        margin-top: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav_logo >img{
+        height: 32px;
+        margin-left: 0;
+        border-radius: 8px;
+        box-shadow: 0px 0px 8px 4px rgb(170, 75, 0, 0.5);
+    }
+    .nav_right{
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        margin-left: 2px;
+        margin-top: 10px;
+    }
+    .nav_ul{
+        gap: 3px;
+    }
+    .nav_li{
+        padding: 7px 5px;
+    }
+
+    .nav_mode{
+        display: none;
+    }
+}
+
+@media screen and (min-width:581px) and (max-width:990px) {
+    .nav{
+        width: 100vw;
+        border-bottom: 2px solid gray;
+        padding-bottom: 18px;
+    }
+    .nav_header{
+        width: 100vw;
+        height: 6vh;
+        margin-top: 6px;
+        display: flex;
+        /* align-items: center;
+        justify-content: center; */
+    }
+    .nav_logo >img{
+        height: 32px;
+        margin-left: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 8px 4px rgb(0, 0, 0, 0.5);
+
+    }
+    .nav_right{
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        margin-left: 2px;
+        margin-top: 6px;
+    }
+    .nav_ul{
+        gap: 16px;
+    }
+    .nav_li{
+        padding: 7px 5px;
+    }
+
+    .nav_mode{
+        display: none;
+    }
+}
